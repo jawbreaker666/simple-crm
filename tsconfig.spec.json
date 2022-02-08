@@ -2,9 +2,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
+      "jasmine",
+    
     ]
   },
   "files": [
@@ -16,3 +19,4 @@
     "src/**/*.d.ts"
   ]
 }
+
