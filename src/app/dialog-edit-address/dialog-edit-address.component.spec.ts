@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
+import { RouterModule } from '@angular/router';
 
 import { DialogEditAddressComponent } from './dialog-edit-address.component';
+import { Component } from '@angular/core';
 
 describe('DialogEditAddressComponent', () => {
   let component: DialogEditAddressComponent;
@@ -8,7 +11,9 @@ describe('DialogEditAddressComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DialogEditAddressComponent ]
+      imports: [RouterModule],
+      declarations: [ DialogEditAddressComponent, MatDialogModule, Component],
+      providers: []
     })
     .compileComponents();
   });

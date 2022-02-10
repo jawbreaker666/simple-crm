@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ActivatedRoute } from '@angular/router';
+import { MatDialogRef } from '@angular/material/dialog';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 import { UserDetailComponent } from './user-detail.component';
-import { Component } from '@angular/core';
+
 
 describe('UserDetailComponent', () => {
   let component: UserDetailComponent;
@@ -10,8 +11,10 @@ describe('UserDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [],
-      declarations: [ UserDetailComponent, ActivatedRoute ]
+      imports: [RouterModule],
+      declarations: [ UserDetailComponent],
+      providers: [ MatDialogRef,  ActivatedRoute ],
+
     })
     .compileComponents();
   });
