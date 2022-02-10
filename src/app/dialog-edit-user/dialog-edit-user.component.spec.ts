@@ -10,8 +10,8 @@ describe('DialogEditUserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule.forRoot([]), MatDialogModule],
-      declarations: [ DialogEditUserComponent, ActivatedRoute ],
+      imports: [MatDialogModule, ActivatedRoute], 
+      declarations: [ DialogEditUserComponent ],
       providers: [ MatDialogRef ],
     })
     .compileComponents();

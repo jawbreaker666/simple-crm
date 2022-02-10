@@ -11,8 +11,8 @@ describe('DialogEditAddressComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule],
-      declarations: [ DialogEditAddressComponent, MatDialogModule, Component],
+      imports: [ RouterModule,MatDialogModule],
+      declarations: [ DialogEditAddressComponent, Component],
       providers: []
     })
     .compileComponents();

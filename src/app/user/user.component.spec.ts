@@ -10,8 +10,8 @@ describe('UserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule],
-      declarations: [ UserComponent,  MatDialog ],
+      imports: [MatDialog],
+      declarations: [ UserComponent],
       providers: []
     })
     .compileComponents();
