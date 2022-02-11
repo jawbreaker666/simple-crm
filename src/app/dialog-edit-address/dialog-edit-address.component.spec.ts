@@ -12,7 +12,7 @@ describe('DialogEditAddressComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ RouterModule,MatDialogModule],
-      declarations: [ DialogEditAddressComponent, Component],
+      declarations: [ DialogEditAddressComponent],
       providers: []
     })
     .compileComponents();

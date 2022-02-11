@@ -11,9 +11,9 @@ describe('UserDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule],
+      imports: [RouterModule, MatDialogRef],
       declarations: [ UserDetailComponent],
-      providers: [ MatDialogRef,  ActivatedRoute ],
+      providers: [ActivatedRoute ],
 
     })
     .compileComponents();

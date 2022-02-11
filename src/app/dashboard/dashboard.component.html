@@ -1,1 +1,93 @@
-<p>dashboard works!</p>
+<div style="display: flex; justify-content: center;">
+
+<!--Todos-->
+<div class="todo-card">
+
+  
+    <div class="todo-header">
+        <h2>TO-DO'S</h2>
+    </div>
+    
+<mat-selection-list #tasks>
+    <mat-list-option *ngFor="let shoe of todos">
+      {{shoe}}
+    </mat-list-option>
+  </mat-selection-list>
+  
+<div class="selected">
+  <p>
+    Options selected: {{tasks.selectedOptions.selected.length}}
+  </p>
+
+</div>
+</div>
+
+<!--Calls-->
+<div class="calls">
+    <mat-card class="calls-heigt">
+
+    <div class="calls-header">
+        <h2>Calls</h2></div>
+    
+    <span> 0 missed calls<br></span><br>
+    <span> 3 unassigned callers<br>
+        (02354/12864)<br>
+        (05762/62945)<br>
+        (01234/84956)</span>
+
+</mat-card>
+
+</div>
+
+</div> <!--display flex-->
+
+<div class="employees-header">
+    <h2>Contact Data from all employees</h2></div>
+
+<mat-card class="employees-card">
+   
+
+    <table class="employees">
+       
+      <tr>
+        <th>Name</th>
+        <th>E-Mail</th>
+        <th>Tel.Number</th>
+      </tr>
+
+      <div class="strich-container"></div>
+      <tr>
+        <th>Horst Müller</th>
+        <th>Horst@email.com</th>
+        <th>07895/547032</th>
+      </tr>
+      <div class="strich-container"></div>
+
+      <tr>
+        <th>Simone Schmitt</th>
+        <th>simone@email.com</th>
+        <th>01234/56789</th>
+      </tr>
+      <div class="strich-container"></div>
+
+      <tr>
+        <th>Lisa Koch</th>
+        <th>lisakoch@email.com</th>
+        <th>08996/175243</th>
+      </tr>
+      <div class="strich-container"></div>
+
+      <tr>
+        <th>Tina Mühle</th>
+        <th>mühle@email.com</th>
+        <th>01135/74563</th>
+      </tr>
+     
+  
+    </table>
+</mat-card>
+
+  
+
+  
+  

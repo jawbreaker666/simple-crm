@@ -29,7 +29,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { DialogEditAddressComponent } from './dialog-edit-address/dialog-edit-address.component';
 import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
-import { Component } from '@angular/core';
+import {MatListModule} from '@angular/material/list';
+
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { Component } from '@angular/core';
     MatProgressBarModule,
     MatCardModule,
     MatMenuModule,
-    Component,
+    MatListModule
+   
    
     
   ],
